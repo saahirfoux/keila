@@ -257,6 +257,10 @@
     max-width: 1080px;
     margin: 0 auto;
 }
+.keila-content img {
+    margin: 0 25px;
+    padding: 0 25px;
+}
 .keila-text {
     max-height:250px;
 }
