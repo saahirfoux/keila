@@ -258,12 +258,13 @@
     margin: 0 auto;
 }
 .keila-text {
-    height:250px;
+    max-height:250px;
 }
 .keila-images {
     width:350px;
     margin: 0 auto;
     height:350px;
+    margin-bottom: 10px;
 }
 
 .haiku-title {
@@ -283,7 +284,11 @@ body .row > div {
 #woman {
     background-image:url("../img/keila-the-one.png");
 }
-
+.title-row {
+    border-bottom: 2px solid #efefef;
+    margin-bottom: 10px;
+    border-bottom-style: dashed;
+}
 .keila-img {
     border-radius: 50%;
     width: 350px;
@@ -295,4 +300,3 @@ body .row > div {
     -ms-transition: all 0.4s ease-in-out;
     transition: all 0.4s ease-in-out;
 }
-
