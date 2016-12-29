@@ -1,0 +1,298 @@
+.full-size {
+    height: 100%;
+    width: 100%;
+}
+.fullheight {
+    height: 100%;
+}
+.fullwidth {
+    width: 100%;
+}
+
+/*.foreground, .background {*/
+/*display: none;*/
+/*}*/
+
+
+.foreground {
+    position:absolute;
+    top: 0;
+}
+.foreground-content {
+    display: table;
+    width: 1280px;
+    height: 100%;
+    min-height: 800px;
+    float: right;
+}
+
+.foreground-content .middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.foreground-content .inner > div{
+    float: right;
+}
+.logo-container {
+    text-align: center;
+}
+.logo-container img {
+    margin-top:250px;
+}
+.services-container {
+    margin-top: 75px;
+}
+.background {
+    height: 100%;
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+    /*background-color: black;*/
+    overflow: hidden;
+    z-index: 1 !important;
+}
+#background-wallpaper {
+    height: 100%;
+    width: 100%;
+    /*background-image: url('../img/parallax1.png');*/
+    z-index: 1 !important;
+}
+#foreground-wallpaper {
+    height: 100%;
+    width: 100%;
+    background-image: url('../img/background-1980x1080.png');
+    z-index: 10 !important;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.services {
+    margin-top:25px;
+}
+.service i {
+    margin: 0 auto;
+    width: 25px;
+    display: block;
+}
+
+.service h3 {
+    text-align: center;
+}
+
+.corner-box {
+    width: 588px;
+    position: absolute;
+    right: 0;
+    z-index: -1;
+    background-image: url('../img/background-1980x1080.png');
+}
+
+.corner-box.top {
+    border-left: 484px solid transparent;
+    border-top: 486px solid green;
+    top: 0;
+}
+.corner-box.bottom {
+    border-bottom: 488px solid red;
+    border-left: 484px solid transparent;
+    bottom: 0;
+}
+
+.nopadding {
+    padding: 0;
+}
+
+/**** ALBUMS ****/
+.album-list-wrap .album-card {
+    width:100%;
+}
+
+.album-list-wrap .album-card .image {
+    position:relative;
+    overflow:hidden;
+    display:block
+}
+
+.album-list-wrap .album-card .image img {
+    max-width:100%;
+    width:100%
+}
+
+.album-list-wrap .album-card .image .overlay {
+    background:rgba(18, 128, 22, 0.5);
+    width:100%;
+    height:100%;
+    position:absolute;
+    opacity:0;
+    -webkit-opacity:0;
+    -moz-opacity:0;
+    display:block;
+    left:0;
+    top:0;
+    transition:all 300ms;
+    -webkit-transition:all 300ms
+}
+
+.album-list-wrap .album-card .image .overlay .button-wrapper {
+    display:table;
+    width:100%;
+    height:100%;
+    left:0;
+    top:0
+}
+
+.album-list-wrap .album-card .image .overlay .button-wrapper .view-button {
+    display:table-cell;
+    vertical-align:middle;
+    left:0;
+    top:0
+}
+
+.album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link {
+    display:block;
+    text-decoration:none;
+    text-align:center;
+    margin:0 auto;
+    width:80px;
+    height:80px;
+    padding:1px;
+    border-radius:50%;
+    color:#ccc;
+    background-color:#000;
+    text-transform:uppercase;
+    -webkit-transform:rotate(45deg);
+    -moz-transform:rotate(45deg);
+    -ms-transform:rotate(45deg);
+    transform:rotate(45deg)
+}
+
+.album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link:hover span {
+    color:#337ab7;
+}
+
+.album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link span {
+    font-family:"Lato",helvetica,sans-serif;
+    text-decoration:none;
+    display:block;
+    font-weight:700;
+    font-size:14px;
+    line-height:18px;
+    margin-top:20px;
+    -webkit-transform:rotate(-45deg);
+    -moz-transform:rotate(-45deg);
+    -ms-transform:rotate(-45deg);
+    transform:rotate(-45deg)
+}
+
+.album-list-wrap .album-card .image .overlay .button-wrapper .view-button .link span .bold {
+    font-family:"Lato",helvetica,sans-serif;
+    font-weight:300;
+    font-size:16px
+}
+
+.album-list-wrap .album-card .image:hover .overlay {
+    opacity:1;
+    -webkit-opacity:1;
+    -moz-opacity:1
+}
+
+.album-list-wrap .album-card .text {
+    position:relative;
+    background:#FBFBFB;
+    padding:20px 15px;
+    width:100%;
+    border-top:0;
+    border-top: 1px dotted black;
+    border-bottom: 1px dotted black;
+}
+
+.album-list-wrap .album-card .title h4 {
+    font-size:14px;
+    color: #5583F1;
+    margin:0;
+    font-family:"Lato",helvetica,sans-serif;
+    font-weight:700;
+    text-transform:uppercase
+}
+
+.album-list-wrap .album-card .year {
+    position:absolute;
+    top:20px;
+    right:15px;
+    color:#ccc;
+    cursor:pointer
+}
+
+.album-list-wrap .pagination-wrap {
+    margin-top:0;
+    width:100%;
+    display:inline-block
+}
+
+/**** Single Page : Portfolio ****/
+
+.section-portfolio img {
+    width: 90%;
+}
+
+.section-portfolio .row > div {
+    margin: 0 auto;
+    max-width: 90%;
+    text-align: center;
+}
+
+.project-attributes div {
+    margin: 0 auto;
+    height: 25px;
+    width: 140px;
+}
+.project-attributes div i {
+    float: left;
+    font-size: 17px;
+    margin: 0 10px;
+}
+
+.keila-content {
+    max-width: 1080px;
+    margin: 0 auto;
+}
+.keila-text {
+    height:250px;
+}
+.keila-images {
+    width:350px;
+    margin: 0 auto;
+    height:350px;
+}
+
+.haiku-title {
+    text-align: center;
+}
+
+body .row > div {
+    text-align: center;
+}
+
+#seed {
+    background-image:url("../img/this-is-keila.png");
+}
+#beauty {
+    background-image:url("../img/her-beauty.png");
+}
+#woman {
+    background-image:url("../img/keila-the-one.png");
+}
+
+.keila-img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    box-shadow: inset 0 0 0 16px rgba(255,255,255,0.6), 0 1px 2px rgba(0,0,0,0.1);
+    -webkit-transition: all 0.4s ease-in-out;
+    -moz-transition: all 0.4s ease-in-out;
+    -o-transition: all 0.4s ease-in-out;
+    -ms-transition: all 0.4s ease-in-out;
+    transition: all 0.4s ease-in-out;
+}
+
