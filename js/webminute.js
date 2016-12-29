@@ -18,6 +18,6 @@ jQuery(function ($) {
     /*  #slimScroll
      /* ----------------------------------------------------------- */
     $('.project-contents').slimScroll({
-        height: '1280px'
+        height: '2500px'
     });
 });
